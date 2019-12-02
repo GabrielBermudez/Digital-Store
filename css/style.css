@@ -1,0 +1,169 @@
+body{
+  background-color:#24323D;
+
+}
+nav .barraNav{
+  position: relative;
+  left:64%;
+  color:	#BDC4CA;
+  font-size: 20px;
+}
+ #titleIngreso{
+  position: relative;
+  left: 42%;
+  bottom: -30px;
+  font-size: 40px;
+  font-family: sans-serif;
+  color:	#BDC4CA;
+
+}
+ .input{
+   background-color: #24323D;
+   position: relative;
+    left: 30%;
+    top: 40px;
+    height: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    color: #BDC4CA;
+
+ }
+.labelInput{
+  position: relative;
+  left: 30%;
+  top: 40px;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #BDC4CA;
+}
+#inputEmail{
+  margin-left: 51px;
+  margin-top: 30px;
+}
+#botonSubmit{
+  margin-top: 30px;
+  position: relative;
+  top: 40px;
+  left: 43.5%;
+  height: 45px;
+  width: 90px;
+  font-size: 25px;
+  background-color: #23AC89;
+  color: #BDC4CA;
+  border-color: #23AC89;
+}
+#barraNavRegistro a{
+  left: 86%;
+}
+#titleRegistro{
+ position: relative;
+ left:55%;
+ bottom: -30px;
+ font-size: 40px;
+ font-family: sans-serif;
+ color:	#BDC4CA;
+
+}
+form .paises{
+  color: #BDC4CA;
+  position: relative;
+  left: 30%;
+  width: 100px;
+  height: 40px;
+  background-color: #24323D;
+  margin-top: 40px;
+}
+#botonSubmitRegistro{
+  margin-top: 30px;
+  position: relative;
+  top: 20px;
+  left: 60%;
+  height: 45px;
+  width: 90px;
+  font-size: 25px;
+  background-color: #23AC89;
+  color: #BDC4CA;
+  border-color: #23AC89;
+}
+#bodyHome{
+  background-image: url("../images/background-home.png");
+  background-size: 1650px;
+  background-repeat: no-repeat;
+
+}
+#barraNavHome a{
+  position:relative;
+  left:0%;
+  font-size: 35px;
+  color: #24323D;
+}
+#logo{
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  position: relative;
+  top: 40px;
+  left: 60px;
+}
+#titleHome{
+  color:red;
+  position: relative;
+  left: 510px;
+  bottom: 120px;
+  font-size: 70px;
+  font-family: sans-serif;
+}
+#botonIngreso{
+position: relative;
+left: 80%;
+bottom: 150px;
+width: 110px;
+height: 40px;
+font-size: 25px;
+background-color: #23AC89;
+color: #24323D;
+border-color: #23AC89;
+}
+#botonRegistro{
+  position: relative;
+  left: 82%;
+  bottom:150px;
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+  background-color: #23AC89;
+  color: #24323D;
+  border-color: #23AC89;
+}
+
+a .logos{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: 90%;
+  margin-left: 15px;
+  border-radius: 100px;
+}
+
+#contenedorFotos{
+  overflow: hidden;
+}
+#contenedorFotos div img{
+  float: left;
+  width:250px;
+  height:150px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+/* Perfil de Usuario */
+
+#fotoPerfil{
+  width: 140px;
+  height: 140px;
+  border-radius: 100px;
+  position: relative;
+  top: 40px;
+  left: 60px;
+}
