@@ -28,7 +28,7 @@ $contraseñaEncontrada=false;
 
       }
       if($emailEncontrado && $contraseñaEncontrada){
-        header('Location: exito.php');
+        header('Location: homeLogin.php');
       }
 
     }else{

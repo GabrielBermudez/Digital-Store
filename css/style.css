@@ -109,7 +109,7 @@ form .paises{
 }
 #banner{
   background-image: url("../images/backgroundBanner.png");
-
+  background-size: cover;
 }
 
 #barraNavHome {
@@ -219,4 +219,25 @@ footer #barraNavHome a{
   position: relative;
   top: 40px;
   left: 60px;
+}
+/*HomeLogin*/
+#banner #barraNavHome .seccionPerfil #imgPerfilHome{
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  position: relative;
+  left: 28%;
+}
+
+#banner #barraNavHome .seccionPerfil .buttonLoginHome{
+  float: right;
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  background-color: #23AC89;
+  color: black;
+  border-color: #23AC89;
+  margin-left: 10px;
+  margin-top: 90px;
+  margin-right: 15px;
 }
