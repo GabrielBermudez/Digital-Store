@@ -43,7 +43,6 @@ if(strlen($_POST["contraseña"])){
 
 if(strlen($_POST["verificarContraseña"])){
   $contraseñaVerif=$_POST["verificarContraseña"];
-  $contadorValidacion++;
 }else{
   $arrayErrores[]="Debe escribir la verificacion de contraseña";
 }
@@ -78,37 +77,58 @@ if(strlen($_POST["celular"]) && is_numeric($_POST["telefono"])){
   $arrayErrores[]="Debe escribir su celular";
 }
 
-if($contadorValidacion==9){
-  echo "Registro con exito <br>";
+if($contadorValidacion==8){
+  $condicion=true;
 }else{
-  echo "Fallo el registro <br>";
+  $condicion=false;
 }
-/*
-foreach ($arrayErrores as $indice => $value) {
-  echo "$value <br>";
-}
-*/
-echo "$contadorValidacion";
-var_dump($arrayErrores);
+
 
 
 
 echo "<br> <br>";
+
+
 //Prueba de creacion de usuarios
+if($condicion){
 $usuarios=[
-  ["nombre"=>"$nombre","apellido"=>"$apellido","usuario"=>"$usuario",
-"email"=>"$email","contraseña"=>"$contraseña","contraseñaVerificar"=>"$contraseñaVerif",
-"telefono"=>"$tel","celular"=>"$cel"]
+     "nombre"=>"$nombre","apellido"=>"$apellido","usuario"=>"$usuario",
+     "email"=>"$email","contrasenia"=>"$contraseña","telefono"=>"$tel",
+     "celular"=>"$cel"
           ];
-var_dump($usuarios);
 
-/* 1- $var = traer json con file get contents
-2- $var = json_decode($var, true);
-3. $var[] = $usuarios;
-4. $var = josn_encode($var)
-5. file_put_contents($var, archivo.json) */
+/*var_dump($usuarios);*/
 
+$contenidoJson= file_get_contents("JSON/base_de_datos.json");
+$arrayUsuarios=json_decode($contenidoJson,true);
+$condicionJson=true;
+if(!empty($arrayUsuarios)){
+  foreach ($arrayUsuarios as $user) {
+    foreach ($user as $campo => $valor) {
+      if($valor==$usuarios["email"]){
+        echo "El mail ya se encuentra registrado <br>";
+        $condicionJson=false;
+        break;
+      }else{
+        $condicionJson=true;
+      }
+    }
 
+    if(!$condicionJson){
+      break;
+    }
+  }
+}
+if($condicionJson){
+  $arrayUsuarios[]=$usuarios;
+  $baseDatos=json_encode($arrayUsuarios);
+
+file_put_contents("JSON/base_de_datos.json",$baseDatos);
+}
+}
+if(!$condicionJson){
+  echo "Fallo el registro";
+}
 
 
 
