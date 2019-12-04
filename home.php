@@ -1,36 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" style="width: 1150px;">
+<html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
     <title>Home</title>
   </head>
   <body id="bodyHome">
+    <header id="banner">
+
+
     <nav id="barraNavHome"> <!-- Barra de navegacion       -->
-      <a class="barraNav" href="home.php">Home |</a>
-      <a class="barraNav" href="perfil.php">Perfil de Usuario |</a>
-      <a class="barraNav" href="catalogo.php">Catalogo |</a>
-      <a class="barraNav" href="contacto.php">Contacto |</a>
-      <a class="barraNav" href="faq.php">F.A.Q</a>
+      <div class="barraNavegacion">
+
+        <a class="barraNav" href="home.php">Home |</a>
+        <a class="barraNav" href="perfil.php">Perfil de Usuario |</a>
+        <a class="barraNav" href="catalogo.php">Catalogo |</a>
+        <a class="barraNav" href="contacto.php">Contacto |</a>
+        <a class="barraNav" href="faq.php">F.A.Q</a>
+
+      </div>
+      <div class="botonIngresoRegistro">
+
+        <input class="botIngresoRegistro" type="button" name="login" value="Ingresar" onclick = "location='login.php'">
+        <input class="botIngresoRegistro" type="button" name="registro" value="Registrarse" onclick = "location='registro.php'">
+
+      </div>
+
     </nav>
     <!--Botones de ingreso y registrarse      -->
-    <input id="botonIngreso" type="button" name="login" value="Ingresar" onclick = "location='login.php'">
-    <input id="botonRegistro" type="button" name="registro" value="Registrarse" onclick = "location='registro.php'">
-    <img id="logo" src="images/logo.png" alt="Logo de negocio">
-    <h1 id="titleHome"> <b>Hanami</b> </h1>
+
+    <img id="logo" src="images/logoDS.png" alt="Logo de negocio">
+    <h1 id="titleHome"> <b>Digital Store</b> </h1>
+  </header>
+
     <!--Aqui estan contenidas todas las fotos        -->
-    <section id="contenedorFotos">
-      <div><img src="images/foto1.png" alt=""></div>
-      <div><img src="images/foto2.png" alt=""></div>
-      <div><img src="images/foto3.png" alt=""></div>
-      <div><img src="images/foto4.png" alt=""></div>
-      <div><img src="images/foto5.png" alt=""></div>
-      <div><img src="images/foto7.png" alt=""></div>
-      <div><img src="images/foto6.png" alt=""></div>
-      <div><img src="images/foto8.png" alt=""></div>
 
-    </section>
+    <section class="vip-products">
 
+			<article class="product">
+				<div class="photo-container">
+					<img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+				</div>
+        
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title"> Huawei P10 Plus 6gb Ram 128gb
+            </span>
+          </a>
+        </h2>
+
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">22.000</span>
+        </div>
+			  <input type="button" name="" value="Comprar">
+			</article>
+
+      <article class="product">
+				<div class="photo-container">
+					<img class="photo" src="images\j7Prime.png" alt="pdto 01">
+				</div>
+
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title"> Samsung J7 Prime 16GB
+            </span>
+          </a>
+        </h2>
+
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">11.699</span>
+        </div>
+			  <input type="button" name="" value="Comprar">
+			</article>
+
+      <article class="product">
+				<div class="photo-container">
+					<img class="photo" src="images\motorolaOneAction.png" alt="pdto 01">
+				</div>
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title"> Motorola One Action 128 GB 4 GB RAM
+            </span>
+          </a>
+        </h2>
+
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">24.999</span>
+        </div>
+			  <input type="button" name="" value="Comprar">
+			</article>
+
+      <article class="product">
+				<div class="photo-container">
+					<img class="photo" src="images\S10Plus.png" alt="pdto 01">
+				</div>
+
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title"> Samsung Galaxy S10+ 128 GB
+            </span>
+          </a>
+        </h2>
+
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">74.999</span>
+        </div>
+			  <input type="button" name="" value="Comprar">
+			</article>
+
+      <article class="product">
+        <div class="photo-container">
+          <img class="photo" src="images\samsungA8530.png" alt="pdto 01">
+        </div>
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title"> Samsung Galaxy A8 Negro
+            </span>
+          </a>
+        </h2>
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">12.299</span>
+        </div>
+        <input id="comprar" type="button" name="" value="Comprar">
+      </article>
+
+      <article class="product">
+        <div class="photo-container">
+          <img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+        </div>
+        <h2> <a href="#">Huawei P10 Plus</a></h2>
+        <input type="button" name="" value="Comprar">
+      </article>
+
+      <article class="product">
+        <div class="photo-container">
+          <img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+        </div>
+        <h2> <a href="#">Huawei P10 Plus</a></h2>
+        <input type="button" name="" value="Comprar">
+      </article>
+
+            <article class="product">
+              <div class="photo-container">
+                <img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+              </div>
+              <h2> <a href="#">Huawei P10 Plus</a></h2>
+              <input type="button" name="" value="Comprar">
+            </article>
+
+
+</section>
 
 
 
@@ -38,5 +162,15 @@
     <a href="https://www.facebook.com/"> <img class="logos" src="images/facebook.png" alt="Facebook"> </a>
     <a href="https://www.instagram.com/"> <img class="logos" src="images/instagram.png" alt="Instagram"> </a>
     <a href="https://www.twitter.com/"> <img class="logos" src="images/twitter.png" alt="Twitter"> </a>
+
+<footer>
+  <nav id="barraNavHome"> <!-- Barra de navegacion       -->
+      <a class="barraNav" href="home.php">Home |</a>
+      <a class="barraNav" href="perfil.php">Perfil de Usuario |</a>
+      <a class="barraNav" href="catalogo.php">Catalogo |</a>
+      <a class="barraNav" href="contacto.php">Contacto |</a>
+      <a class="barraNav" href="faq.php">F.A.Q</a>
+</nav>
+</footer>
   </body>
 </html>

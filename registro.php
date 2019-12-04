@@ -126,14 +126,6 @@ if($condicionJson){
 file_put_contents("JSON/base_de_datos.json",$baseDatos);
 }
 }
-if(!$condicionJson){
-  echo "Fallo el registro";
-}
-
-
-
-
-
 
 
 
@@ -147,7 +139,7 @@ if(!$condicionJson){
   <head>
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Registrarse</title>
   </head>
 
   <body>
@@ -161,6 +153,10 @@ if(!$condicionJson){
 
   <form action="registro.php" method="POST">
   <h1 id="titleRegistro">Registrarse</h1>
+  <img id="imagenPersonaRegistro" src="images/personaRegistro.png" alt="">
+  <input id="subirFotoRegistro" type="file" name="fotoRegistro" value="">
+
+  <br>
   <label class="labelInput" for="nombre">Nombre:</label>
   <input class="input" type="text" name="nombre" value="<?=$nombre?>" >
 
