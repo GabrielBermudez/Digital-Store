@@ -41,7 +41,7 @@
 				<div class="photo-container">
 					<img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
 				</div>
-        
+
         <h2 class="">
           <a href="" class="item__info-title">
             <span class="main-title"> Huawei P10 Plus 6gb Ram 128gb
@@ -95,7 +95,7 @@
 
       <article class="product">
 				<div class="photo-container">
-					<img class="photo" src="images\S10Plus.png" alt="pdto 01">
+					<img class="photo" src="images\samsungS10Plus.png" alt="pdto 01">
 				</div>
 
         <h2 class="">
@@ -131,25 +131,52 @@
 
       <article class="product">
         <div class="photo-container">
-          <img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+          <img class="photo" src="images\huawei-p20-lite.png" alt="pdto 01">
         </div>
-        <h2> <a href="#">Huawei P10 Plus</a></h2>
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title">Huawei P20 Lite 32GB 4GB RAM
+            </span>
+          </a>
+        </h2>
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">21.585</span>
+        </div>
         <input type="button" name="" value="Comprar">
       </article>
 
       <article class="product">
         <div class="photo-container">
-          <img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+          <img class="photo" src="images\motorolaG6.png" alt="pdto 01">
         </div>
-        <h2> <a href="#">Huawei P10 Plus</a></h2>
+        <h2 class="">
+          <a href="" class="item__info-title">
+            <span class="main-title">Motorola G6 Plus 64 GB 4 GB RAM
+            </span>
+          </a>
+        </h2>
+        <div class="precioClass">
+          <span class="simboloPrecio">$</span>
+          <span class="precio">15.499</span>
+        </div>
         <input type="button" name="" value="Comprar">
       </article>
 
             <article class="product">
               <div class="photo-container">
-                <img class="photo" src="images\huaweiP10Plus.png" alt="pdto 01">
+                <img class="photo" src="images\samsungJ7ProGold.png" alt="pdto 01">
               </div>
-              <h2> <a href="#">Huawei P10 Plus</a></h2>
+              <h2 class="">
+                <a href="" class="item__info-title">
+                  <span class="main-title">Samsung J7 Pro Gold 32GB 3GB RAM 
+                  </span>
+                </a>
+              </h2>
+              <div class="precioClass">
+                <span class="simboloPrecio">$</span>
+                <span class="precio">27.865</span>
+              </div>
               <input type="button" name="" value="Comprar">
             </article>
 
@@ -159,11 +186,12 @@
 
 
     <!-- Aqui esta los logotipos de redes sociales       -->
-    <a href="https://www.facebook.com/"> <img class="logos" src="images/facebook.png" alt="Facebook"> </a>
-    <a href="https://www.instagram.com/"> <img class="logos" src="images/instagram.png" alt="Instagram"> </a>
-    <a href="https://www.twitter.com/"> <img class="logos" src="images/twitter.png" alt="Twitter"> </a>
+
 
 <footer>
+  <a href="https://www.facebook.com/"> <img class="logos" src="images/facebook.png" alt="Facebook"> </a>
+  <a href="https://www.instagram.com/"> <img class="logos" src="images/instagram.png" alt="Instagram"> </a>
+  <a href="https://www.twitter.com/"> <img class="logos" src="images/twitter.png" alt="Twitter"> </a>
   <nav id="barraNavHome"> <!-- Barra de navegacion       -->
       <a class="barraNav" href="home.php">Home |</a>
       <a class="barraNav" href="perfil.php">Perfil de Usuario |</a>

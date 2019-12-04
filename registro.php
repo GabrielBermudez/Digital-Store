@@ -126,6 +126,12 @@ if($condicionJson){
 file_put_contents("JSON/base_de_datos.json",$baseDatos);
 }
 }
+if(!$condicionJson){
+  echo "Fallo el registro";
+}else{
+    header('Location: home.php');
+  echo "Registro exitoso";
+}
 
 
 
@@ -158,31 +164,31 @@ file_put_contents("JSON/base_de_datos.json",$baseDatos);
 
   <br>
   <label class="labelInput" for="nombre">Nombre:</label>
-  <input class="input" type="text" name="nombre" value="<?=$nombre?>" >
+  <input class="input" type="text" name="nombre" value="<?=$nombre?>" required >
 
   <label class="labelInput" for="apellido">Apellido:</label>
-  <input class="input" type="text" name="apellido" value="<?=$apellido?>" >
+  <input class="input" type="text" name="apellido" value="<?=$apellido?>" required >
   <br>
 
   <label class="labelInput" for="usuario">Usuario:</label>
-  <input class="input" type="text" name="usuario" value="<?=$usuario?>" >
+  <input class="input" type="text" name="usuario" value="<?=$usuario?>" required >
 
   <label class="labelInput" for="email">E-mail:</label>
-  <input class="input" type="email" name="email" value="<?=$email?>" >
+  <input class="input" type="email" name="email" value="<?=$email?>" required >
   <br>
 
   <label class="labelInput" for="contraseña">Contraseña:</label >
-  <input class="input" type="password" name="contraseña" value="" >
+  <input class="input" type="password" name="contraseña" value="" required >
 
   <label class="labelInput" for="contraseñaConfirmar">Confirmar contraseña:</label >
-  <input class="input" type="password" name="verificarContraseña" value="" >
+  <input class="input" type="password" name="verificarContraseña" value="" required >
   <br>
 
   <label class="labelInput" for="telefono">Tel:</label>
-  <input class="input" type="number" name="telefono" value="<?=$tel?>">
+  <input class="input" type="number" name="telefono" value="<?=$tel?>" required>
 
   <label class="labelInput" for="celular">Cel:</label>
-  <input class="input" type="number" name="celular" value="<?=$cel?>">
+  <input class="input" type="number" name="celular" value="<?=$cel?>" required>
   <br>
 
   <label class="labelInput" for="genero">Genero:</label> <br>
