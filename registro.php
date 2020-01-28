@@ -1,7 +1,7 @@
 
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
-
+require_once("funciones.php");
 $nombre="";
 $apellido="";
 $usuario="";
@@ -100,36 +100,34 @@ $usuarios=[
 /*var_dump($usuarios);*/
 
 $contenidoJson= file_get_contents("JSON/base_de_datos.json");
-$arrayUsuarios=json_decode($contenidoJson,true);
+$explodeContenidoJson=explode(PHP_EOL,$contenidoJson);
+array_pop($explodeContenidoJson);
+
 $condicionJson=true;
-if(!empty($arrayUsuarios)){
-  foreach ($arrayUsuarios as $user) {
-    foreach ($user as $campo => $valor) {
-      if($valor==$usuarios["email"]){
+if(!empty($explodeContenidoJson)){
+  foreach ($explodeContenidoJson as $user) {
+    $arrayUsuarios=json_decode($user,true);    
+      if($arrayUsuarios["email"]==$usuarios["email"]){
         echo "El mail ya se encuentra registrado <br>";
         $condicionJson=false;
         break;
       }else{
         $condicionJson=true;
       }
-    }
-
-    if(!$condicionJson){
-      break;
-    }
   }
 }
+
 if($condicionJson){
   $arrayUsuarios[]=$usuarios;
-  $baseDatos=json_encode($arrayUsuarios);
+  $baseDatos=json_encode($usuarios);
 
-file_put_contents("JSON/base_de_datos.json",$baseDatos);
+file_put_contents("JSON/base_de_datos.json",$baseDatos . PHP_EOL, FILE_APPEND);
 }
 }
 if(!$condicionJson){
   echo "Fallo el registro";
 }else{
-    header('Location: home.php');
+    header('Location: index.php');
   echo "Registro exitoso";
 }
 

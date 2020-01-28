@@ -117,30 +117,43 @@ form .paises{
 }
 #barraNavHome .barraNavegacion .barraNav{
   float: left;
-  font-size: 35px;
-  color: white;
+  font-size: 25px;
+  color: rgb(247, 248, 244);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#barraNavHome .barraNavegacion .barraNav:hover {
+  color: rgb(110, 153, 233);
+  font-style: italic;
+
 }
 
 #barraNavHome div .botonIngresoRegistro{
   overflow: hidden;
+
 }
 .botonIngresoRegistro .botIngresoRegistro{
 float: right;
-width: 110px;
-height: 40px;
-font-size: 25px;
-background-color: #23AC89;
-color: black;
-border-color: #23AC89;
+width: 120px;
+height: 35px;
+font-size: 17px;
+background-color: rgb(245, 247, 242);
+color: rgb(38, 4, 94);
+border-color: rgb(129, 141, 138);
 margin-left: 20px;
-margin-top: 5px;
-margin-right: 5px;
+margin-top: 10px;
+margin-right: 10px;
+}
+
+.botonIngresoRegistro .botIngresoRegistro:hover {
+  color: rgb(238, 240, 238);
+  background-color: rgb(46, 114, 240);
 }
 
 #logo{
   width: 140px;
   height: 140px;
-  border-radius: 100px;
+  border-radius:100px;
   position: relative;
   top: 40px;
   left: 28%;
@@ -165,13 +178,23 @@ a .logos{
 }
 .vip-products{
   overflow: hidden;
+  border-color: rgb(3, 30, 31);
 }
 .vip-products .product{
   width: 250px;
-  margin-right: 20px;
   float:left;
+  margin-left: 40px ;
+  margin-right: 10px;
   margin-bottom: 50px;
-  background-color: #fff;
+  background-color: rgb(250, 250, 250);
+
+}
+
+
+.vip-products .product:hover {
+  box-shadow: 0px 0px 8px rgba(0,0,0,6);
+
+ /* border-color: rgb(3, 30, 31);*/
 
 
 }
@@ -187,13 +210,24 @@ a .logos{
 
 }
 footer{
-  padding-top: 20px;
+
   background-color: black;
-  padding-bottom:20px;
 }
+footer #mapa{
+  align-items: center;
+  margin: 0 auto;
+  align-content: center;
+}
+footer #infoHome{
+  color: rgb(216, 230, 247);
+  font-size: 17px;
+  opacity: 0.9;
+}
+
+
 footer #barraNavHome a{
 
-  color:white;
+  color: rgb(216, 230, 247);
   position: relative;
   left: 60%;
 
@@ -226,16 +260,16 @@ footer #barraNavHome a{
   height: 80px;
   border-radius: 100px;
   position: relative;
-  left: 28%;
+  left: 23.5%;
 }
 
 #banner #barraNavHome .seccionPerfil .buttonLoginHome{
   float: right;
   width: 80px;
-  height: 30px;
+  height: 20px;
   font-size: 15px;
   background-color: #23AC89;
-  color: black;
+  color: rgb(179, 174, 174);
   border-color: #23AC89;
   margin-left: 10px;
   margin-top: 90px;

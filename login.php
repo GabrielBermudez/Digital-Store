@@ -1,8 +1,10 @@
 <?php
 error_reporting(E_ALL ^ E_NOTICE);
+require_once("funciones.php");
 /*$array=[["gabrielbermudez0@gmail.com","12345"],["gabriel@gmail.com","123"]];*/
 $contenidoJson= file_get_contents("JSON/base_de_datos.json");
-$arrayUsuarios=json_decode($contenidoJson,true);
+$explodeContenidoJson=explode(PHP_EOL,$contenidoJson);
+array_pop($explodeContenidoJson);
 $email=$_POST["email"];
 $password=$_POST["password"];
 $emailEncontrado=false;
@@ -11,20 +13,19 @@ $contraseñaEncontrada=false;
   if(strlen($email) && strlen($password)){
     if(filter_var("$email", FILTER_VALIDATE_EMAIL)){
 
-      foreach ($arrayUsuarios as $user) {
-
-        foreach ($user as $datos) {
-          if($datos==$email){
+      foreach ($explodeContenidoJson as $usuarioJson) {
+        $arrayUsuario=json_decode($usuarioJson,true);
+          if($arrayUsuario["email"]==$email){
             $emailEncontrado=true;
 
-            if(password_verify($password, $user["contrasenia"])){
+            if(password_verify($password, $arrayUsuario["contrasenia"])){
               echo "Entre al if";
               $contraseñaEncontrada=true;
               break;
             }
           }
 
-        }
+
 
       }
       if($emailEncontrado && $contraseñaEncontrada){

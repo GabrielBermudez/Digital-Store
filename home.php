@@ -6,6 +6,8 @@
     <title>Home</title>
   </head>
   <body id="bodyHome">
+    <div class="container">
+
     <header id="banner">
 
 
@@ -30,7 +32,10 @@
     <!--Botones de ingreso y registrarse      -->
 
     <img id="logo" src="images/logoDS.png" alt="Logo de negocio">
-    <h1 id="titleHome"> <b>Digital Store</b> </h1>
+    <h1 id="titleHome">
+      <span style="color:black">Digital</span>
+      <span style="color:white">Store</span>
+    </h1>
   </header>
 
     <!--Aqui estan contenidas todas las fotos        -->
@@ -169,7 +174,7 @@
               </div>
               <h2 class="">
                 <a href="" class="item__info-title">
-                  <span class="main-title">Samsung J7 Pro Gold 32GB 3GB RAM 
+                  <span class="main-title">Samsung J7 Pro Gold 32GB 3GB RAM
                   </span>
                 </a>
               </h2>
@@ -189,9 +194,11 @@
 
 
 <footer>
+  <p id="infoHome"><br> Tel: 2614269628 <br><br> Cel: 2612388981 <br><br> Direccion:
+  Niñas de Ayohuma 1395 Guaymallen Mendoza</p>
   <a href="https://www.facebook.com/"> <img class="logos" src="images/facebook.png" alt="Facebook"> </a>
   <a href="https://www.instagram.com/"> <img class="logos" src="images/instagram.png" alt="Instagram"> </a>
-  <a href="https://www.twitter.com/"> <img class="logos" src="images/twitter.png" alt="Twitter"> </a>
+  <a href="https://www.twitter.com/"> <img class="logos" src="images/twitter.png" alt="Twitter"> </a> <br> <br>
   <nav id="barraNavHome"> <!-- Barra de navegacion       -->
       <a class="barraNav" href="home.php">Home |</a>
       <a class="barraNav" href="perfil.php">Perfil de Usuario |</a>
@@ -200,5 +207,6 @@
       <a class="barraNav" href="faq.php">F.A.Q</a>
 </nav>
 </footer>
+</div>
   </body>
 </html>

@@ -1,0 +1,281 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/*-- COMIENZO EDICION --*/
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*-- FIN EDICION --*/
+body {
+    font-family: 'Molengo', sans-serif;
+	background: black;
+  background-image: url("../images/backgroundContacto.png");
+}
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 100;
+}
+/*-- MENU --*/
+.mainw3-agileinfo {
+    width: 50%;
+    margin: 0 auto;
+}
+/*-- CONTACTO --*/
+.contact-w3left {
+    text-align: center;
+}
+.contact-w3left img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.contact-grid.agileits {
+    padding:2.5em;
+	background-color:black;
+  margin-bottom: 30px;
+}
+.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+    width: 95.5%;
+    color: black;
+    background: rgba(0, 0, 0, 0.61);
+    outline: none;
+    font-size: 1em;
+    padding: .8em 1em;
+    margin-bottom: 1.5em;
+    border: none;
+    font-family: 'Molengo', sans-serif;
+    border-bottom: 1px solid #f43640;
+    -webkit-appearance: none;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 1px 4px 23px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 4px 23px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 3px -2px rgba(0,0,0,0.75);
+}
+.contact-grid textarea {
+    resize: none;
+    min-height:6em;
+}
+.contact-grid input[type="submit"] {
+    outline: none;
+    display: inherit;
+    color: #fff;
+    padding: .9em 4em;
+    font-size: 1em;
+    letter-spacing: 1px;
+    -webkit-appearance: none;
+    margin: 0 auto;
+    border: none;
+    background-color: #23AC89;
+    border-bottom: dotted 1px #fff;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Molengo', sans-serif;
+    cursor: pointer;
+}
+.contact-grid input[type="submit"]:hover{
+	background: none;
+	background: #000;
+}
+/*-- //CONTACTO --*/
+/*-- //MENU --*/
+
+::-webkit-input-placeholder {
+	color: black;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #fff;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;
+}
+:-ms-input-placeholder {
+   color: #fff;
+}
+.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+  width: 94.7%;
+  background-color: white;
+}
+
+#logoContacto{
+  left: 78%;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  position: relative;
+  bottom: 40px;
+}
+
+/*--responsive--*/
+
+@media(max-width: 1680px){
+
+}
+@media(max-width: 1600px){
+
+}
+@media(max-width: 1440px){
+	.mainw3-agileinfo {
+		width: 55%;
+	}
+}
+@media(max-width: 1366px){
+	.mainw3-agileinfo {
+		width: 58%;
+	}
+}
+@media(max-width: 1280px){
+	.mainw3-agileinfo {
+		width: 62%;
+	}
+}
+@media(max-width: 1080px){
+	.mainw3-agileinfo {
+		width: 74%;
+	}
+}
+@media(max-width: 1050px){
+	.mainw3-agileinfo {
+		width: 76%;
+	}
+}
+@media(max-width: 1024px){
+	.mainw3-agileinfo {
+		width: 78%;
+	}
+}
+@media(max-width: 991px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 95%;
+	}
+}
+@media(max-width: 900px){
+	h1 {
+		font-size: 3em;
+	}
+	.mainw3-agileinfo {
+		width: 83%;
+	}
+}
+@media(max-width: 800px){
+	.mainw3-agileinfo {
+		width: 91%;
+	}
+}
+@media(max-width: 768px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 94.7%;
+    background-color: white;
+	}
+}
+@media(max-width: 736px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 94.4%;
+	}
+}
+@media(max-width: 667px){
+	.mainw3-agileinfo {
+		width: 94%;
+	}
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 94%;
+	}
+}
+@media(max-width: 640px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 93.5%;
+	}
+}
+@media(max-width: 600px){
+	h1 {
+		font-size: 2.8em;
+	}
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		font-size: .9em;
+	}
+	.w3copyright-agile h2 {
+		letter-spacing: 1px;
+	}
+}
+@media(max-width: 568px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 93%;
+	}
+	.contact-grid input[type="submit"] {
+		font-size: .9em;
+	}
+}
+@media(max-width: 480px){
+	h1 {
+		font-size: 2.4em;
+	}
+	.contact-grid.agileits {
+		padding: 1.5em;
+	}
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 92.5%;
+		margin-bottom: 1.2em;
+	}
+
+}
+@media(max-width: 440px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 91.5%;
+	}
+}
+@media(max-width: 414px){
+	h1 {
+		font-size: 2.2em;
+	}
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 91%;
+	}
+}
+@media(max-width: 384px){
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 90%;
+	}
+
+}
+@media(max-width: 375px){
+
+}
+@media(max-width: 320px){
+	h1 {
+		font-size: 1.8em;
+	}
+	.contact-grid input[type="text"], .contact-grid input[type="email"], .contact-grid textarea {
+		width: 88%;
+		letter-spacing: 0px;
+		margin-bottom: 1em;
+	}
+	.contact-grid.agileits {
+		padding: 1.2em;
+	}
+	.contact-grid textarea {
+		min-height: 5em;
+	}
+
+	.contact-grid input[type="submit"] {
+		padding: .8em 3em;
+	}
+}
+/*--//responsive--*/
